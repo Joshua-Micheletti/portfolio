@@ -1,5 +1,7 @@
 import React from "react";
-import "../styles/navbar.css"
+import "../styles/navbar.css";
+
+import Dropdown from "../components/dropdown"
 
 export default function Navbar(props) {
 
@@ -13,7 +15,7 @@ export default function Navbar(props) {
 
             <div className="navbar-buttons-area">
                 <div className="right-button">
-                    <a href="#">Projects</a>
+                    <Dropdown text="Projects" items="Gallium, Raytracer, Pyllium2D, Pyllium3D" />
                 </div>
                 <div className="right-button">
                     <a href="#">Socials</a>
@@ -22,7 +24,6 @@ export default function Navbar(props) {
                     <a href="#">Contacts</a>
                 </div>
             </div>
-
         </div>
     );
 }

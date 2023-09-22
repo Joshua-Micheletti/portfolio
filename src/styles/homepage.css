@@ -2,3 +2,25 @@
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/bd/Test.svg");
     height: 100%;
 }
+
+.one {
+    position: absolute;
+    left: 49%;
+    top: 10%;
+    width: 100px;
+    height: 100px;
+    backdrop-filter: blur(20px);
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.two {
+    position: absolute;
+    left: 51%;
+    top: 10%;
+    width: 100px;
+    height: 100px;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}

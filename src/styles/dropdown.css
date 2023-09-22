@@ -1,0 +1,66 @@
+@keyframes scroll-down {
+    from {
+        transform: translate(-25%, -75%);
+        opacity: 0;
+        clip-path: inset(100px 0 0 0);
+    }
+
+    to {
+        transform: translate(-25%, 0%);
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes scroll-up {
+    to {
+        transform: translate(-25%, -100%);
+        opacity: 0;
+    }
+
+    from {
+        transform: translate(-25%, 0%);
+        opacity: 1;
+    }
+}
+
+.dropdown-button:hover {
+    cursor: pointer;
+}
+
+.menu-hidden {
+    display: none;
+}
+
+.menu-item {
+    list-style-type: none;
+    text-align: left;
+    margin: 0.25em 0;
+}
+
+.menu {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 1em 2em;
+    margin-top: 13px;
+    transform: translateX(-25%);
+    animation-name: scroll-down;
+    animation-duration: 0.5s;
+    z-index: -20;
+    box-shadow: 0px 2px 5px -2px black;
+}
+
+.menu-closed {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    padding: 1em 2em;
+    margin-top: 13px;
+    transform: translateX(-25%);
+    animation-name: scroll-up;
+    animation-duration: 0.5s;
+    z-index: -100;
+    box-shadow: 0px 2px 5px -2px black;
+}
