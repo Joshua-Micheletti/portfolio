@@ -1,26 +1,41 @@
+@import "animations.css";
+
 .homepage {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/bd/Test.svg");
+    /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/bd/Test.svg"); */
+    background-image: url("https://wallpapercave.com/wp/wp9300490.jpg");
+    background-position: center center;
+    background-size: cover;
     height: 100%;
 }
 
-.one {
-    position: absolute;
-    left: 49%;
-    top: 10%;
-    width: 100px;
-    height: 100px;
-    backdrop-filter: blur(20px);
-    z-index: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+.name {
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    width: 100%;
+    height: 20vw;
+    font-family: Quicksand-Regular;
+    font-size: 4vw;
+    color: transparent;
+    /* opacity: 0; */
+    animation-name: appear-blur;
+    animation-duration: 0.5s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
-.two {
-    position: absolute;
-    left: 51%;
-    top: 10%;
-    width: 100px;
-    height: 100px;
-    backdrop-filter: blur(20px);
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.7);
+.titles {
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    height: 20vw;
+    color: white;
+    font-size: 1.4vw;
+    font-family: Quicksand-Regular;
+    opacity: 0;
+    animation-name: fade-up;
+    animation-duration: 0.5s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
 }

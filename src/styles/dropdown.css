@@ -1,31 +1,21 @@
-@keyframes scroll-down {
-    from {
-        transform: translate(-25%, -75%);
-        opacity: 0;
-        clip-path: inset(100px 0 0 0);
-    }
-
-    to {
-        transform: translate(-25%, 0%);
-        opacity: 1;
-        clip-path: inset(0 0 0 0);
-    }
-}
-
-@keyframes scroll-up {
-    to {
-        transform: translate(-25%, -100%);
-        opacity: 0;
-    }
-
-    from {
-        transform: translate(-25%, 0%);
-        opacity: 1;
-    }
-}
+@import 'animations.css';
 
 .dropdown-button:hover {
     cursor: pointer;
+    animation-name: glow-up;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    --starting-color: white;
+    --ending-color: grey;
+}
+
+.dropdown-button {
+    user-select: none;
+    animation-name: glow-down;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    --starting-color: grey;
+    --ending-color: white;
 }
 
 .menu-hidden {
@@ -36,31 +26,41 @@
     list-style-type: none;
     text-align: left;
     margin: 0.25em 0;
+    user-select: none;
 }
 
 .menu {
     position: absolute;
+    top: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 1em 2em;
-    margin-top: 13px;
-    transform: translateX(-25%);
-    animation-name: scroll-down;
+    animation-name: appear-down;
     animation-duration: 0.5s;
     z-index: -20;
     box-shadow: 0px 2px 5px -2px black;
+    white-space: nowrap;
+}
+
+.menu-center {
+    --x-offset: -25%;
+    transform: translateX(-25%);
+}
+
+.menu-left {
+    right: 0;
 }
 
 .menu-closed {
     position: absolute;
+    top: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(20px);
     padding: 1em 2em;
-    margin-top: 13px;
-    transform: translateX(-25%);
-    animation-name: scroll-up;
+    animation-name: appear-down-back;
     animation-duration: 0.5s;
     z-index: -100;
     box-shadow: 0px 2px 5px -2px black;
+    white-space: nowrap;
 }

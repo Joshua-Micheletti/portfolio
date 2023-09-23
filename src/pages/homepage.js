@@ -8,41 +8,12 @@ export default function(props) {
     return(
         <div className="homepage">
             <Navbar />
-            <line> </line><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
-            <p> </p><br></br>
+            <div className="name">
+                Joshua Micheletti
+            </div>
+            <div className="titles">
+                Programmer, Software Developer
+            </div>
         </div>
     );
 }

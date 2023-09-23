@@ -1,28 +1,24 @@
-@keyframes fade-down { 
-    from {
-        transform: translateY(-3em);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0em);
-        opacity: 1;
-    }
-}
+@import "animations.css";
 
 a {
-    color: white;
     text-decoration: none;
+    animation-name: glow-down;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
 }
 
 a:hover {
-    color: rgb(180, 180, 180);
+    animation-name: glow-up;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
 }
+
 
 .navbar {
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 10%;
+    padding: 0;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     background-color: rgba(0, 0, 0, 0.7);
@@ -36,16 +32,22 @@ a:hover {
 
 .home-button-area {
     width: 60%;
-    /* vertical-align: middle; */
-    /* text-align: left; */
-    /* font-size: 20px; */
 }
 
 .home-button {
     text-align: left;
     font-size: 1.5vw;
     margin-left: 0.5em;
-    width: 60%;
+    width: 80%;
+    animation-name: glow-down;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.home-button:hover {
+    animation-name: glow-up;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
 }
 
 .right-button {
@@ -57,10 +59,11 @@ a:hover {
 }
 
 .navbar-buttons-area {
-    width: 30%;
-    display: inline;
+    width: 20%;
+    display: flex;
     text-align: right;
     margin-right: 0.5em;
     margin-left: auto;
-    vertical-align: middle;
+    /* vertical-align: middle; */
+    align-items: center;
 }
