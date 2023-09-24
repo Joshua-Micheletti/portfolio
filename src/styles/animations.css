@@ -105,3 +105,41 @@
         opacity: 1;
     }
 }
+
+@keyframes blurry-background {
+    from {
+        backdrop-filter: blur(0px);
+        border-width: 10px;
+        border-color: rgba(0, 30, 200, 0);
+        border-style: solid;
+        border-radius: 0px;
+        box-shadow: 0 0 0 black;
+    }
+
+    to {
+        backdrop-filter: blur(20px);
+        border-width: 10px;
+        border-color: rgba(0, 30, 200, 1);
+        border-style: solid;
+        border-radius: 50px;
+        box-shadow: 0 0 20px black;
+    }
+}
+
+@keyframes blurry-background-off {
+    to {
+        backdrop-filter: blur(0px);
+        border-width: 10px;
+        border-color: rgba(0, 30, 200, 0);
+        border-style: solid;
+        border-radius: 0px;
+    }
+
+    from {
+        backdrop-filter: blur(20px);
+        border-width: 10px;
+        border-color: rgba(0, 30, 200, 1);
+        border-style: solid;
+        border-radius: 50px;
+    }
+}

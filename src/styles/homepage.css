@@ -90,14 +90,24 @@
     width: 50%;
     font-size: 2vw;
     margin-top: 5vw;
-    /* backdrop-filter: blur(20px); */
-    /* border-width: 10px;
+    backdrop-filter: blur(20px);
+    border-width: 10px;
     border-color: rgb(0, 30, 200);
     border-style: solid;
     border-radius: 50px;
-    border-collapse: separate !important; */
+    border-collapse: separate !important;
+
+    animation-name: blurry-background-off;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
     /* border: 5px solid black; */
     /* border: 10px; */
+}
+
+.competence-table:hover {
+    animation-name: blurry-background;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .gradient-border {

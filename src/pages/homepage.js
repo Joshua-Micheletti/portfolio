@@ -29,7 +29,7 @@ export default function(props) {
             </div>
 
             <div className="competences">
-                <table className="competence-table gradient-border">
+                <table className="competence-table">
                     <tr className="competence-headers">
                         <th id="programming-header">
                             Languages
