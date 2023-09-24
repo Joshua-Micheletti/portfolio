@@ -17,7 +17,7 @@ a:hover {
 .navbar {
     position: fixed;
     width: 100%;
-    height: 10%;
+    height: 5vw;
     padding: 0;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -28,6 +28,7 @@ a:hover {
     animation-name: fade-down;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    z-index: 10;
 }
 
 .home-button-area {
@@ -66,4 +67,26 @@ a:hover {
     margin-left: auto;
     /* vertical-align: middle; */
     align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        height: 5%;
+    }
+
+    .home-button {
+        font-size: 4vw;
+    }
+
+    .navbar-buttons-area {
+        width: 45%;
+    }
+
+    .home-button-area {
+        width: 50%;
+    }
+
+    .right-button {
+        font-size: 2.6vw;
+    }
 }

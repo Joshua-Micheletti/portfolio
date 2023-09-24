@@ -2,20 +2,26 @@
 
 .dropdown-button:hover {
     cursor: pointer;
-    animation-name: glow-up;
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
-    --starting-color: white;
-    --ending-color: grey;
 }
 
 .dropdown-button {
     user-select: none;
+}
+
+.hover-glow {
     animation-name: glow-down;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
     --starting-color: grey;
     --ending-color: white;
+}
+
+.hover-glow:hover {
+    animation-name: glow-up;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    --starting-color: white;
+    --ending-color: grey;
 }
 
 .menu-hidden {
@@ -27,7 +33,11 @@
     text-align: left;
     margin: 0.25em 0;
     user-select: none;
-    animation-name: none;
+    cursor: pointer;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .menu {

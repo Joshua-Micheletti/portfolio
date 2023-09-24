@@ -74,12 +74,34 @@
 
 @keyframes fade-up {
     from {
-        transform: translateY(2em);
+        transform: translate(var(--x-offset, 0%), var(--y-travel, 2em));
         opacity: 0;
     }
 
     to {
-        transform: translateY(0em);
+        transform: translate(var(--x-offset, 0%), 0em);
+        opacity: 1;
+    }
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
         opacity: 1;
     }
 }

@@ -33,9 +33,14 @@ export default function Dropdown({ dark=false, items="", text="dropdown", alignm
     var elements = items.split(',');
 
     for (var i = 0; i < elements.length; i++) {
+        var animationDelayValue = parseFloat(i) / parseFloat(15);
+        animationDelayValue += 0.3;
+        console.log(animationDelayValue.toString());
         menuItems.push(
-            <li className={'menu-item ' + "item-" + i.toString() + " " + (dark ? "dark-menu-item" : "light-menu-item")} key={elements[i]}>
-                <div className={'dropdown-button ' + (dark ? "dark-button" : "light-button")}>
+            <li className={'menu-item item-' + i.toString() + " " + (dark ? "dark-menu-item" : "light-menu-item")}
+                key={elements[i]}
+                style={{animationDelay: animationDelayValue.toString() + "s"}}>
+                <div className={'hover-glow ' + (dark ? "dark-button" : "light-button")}>
                     {elements[i]}
                 </div>
             </li>
@@ -44,7 +49,7 @@ export default function Dropdown({ dark=false, items="", text="dropdown", alignm
 
     return(
         <div ref={ref}>
-            <div className={"dropdown-button " + (dark ? "dark-button" : "light-button")} onClick={handleClick}>
+            <div className={"dropdown-button hover-glow " + (dark ? "dark-button" : "light-button")} onClick={handleClick}>
                 {text}
             </div>
 
