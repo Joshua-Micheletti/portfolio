@@ -4,6 +4,7 @@ import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Homepage from './pages/homepage';
+import ProjectsPage from './pages/projectsPage';
 import ErrorPage from './pages/errorpage';
 import {
   createBrowserRouter,
@@ -14,13 +15,19 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <ErrorPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
     path: "/portfolio/",
     element: <Homepage />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "test",
-    element: <div>testing</div>,
+    path: "/portfolio/projects",
+    element: <ProjectsPage />,
+    errorElement: <ErrorPage />,
   }
 ]);
 

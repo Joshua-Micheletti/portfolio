@@ -20,7 +20,7 @@ export default function Navbar(props) {
                 <div className="right-button">
                     <Dropdown
                         text="Projects"
-                        items="Gallium, Raytracer, Pyllium2D, Pyllium3D, More..."
+                        items="Gallium,Raytracer,Pyllium2D,Pyllium3D,More..."
                         alignment="center" />
                 </div>
                 <div className="right-button">

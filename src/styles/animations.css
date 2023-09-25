@@ -121,7 +121,7 @@
         border-width: 10px;
         border-color: rgba(0, 30, 200, 1);
         border-style: none;
-        border-radius: 50px;
+        border-radius: var(--border-radius, 50px);
         box-shadow: 0 0 20px black;
     }
 }
@@ -141,7 +141,31 @@
         border-width: 10px;
         border-color: rgba(0, 30, 200, 1);
         border-style: none;
-        border-radius: 50px;
+        border-radius: var(--border-radius, 50px);
         box-shadow: 0 0 20px black;
+    }
+}
+
+@keyframes fade-left {
+    from {
+        transform: translateX(var(--x-travel, 3em));
+        opacity: 0;
+    }
+    
+    to {
+        transform: translateX(0em);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    from {
+        transform: translateX(calc(0em - var(--x-travel, 3em)));
+        opacity: 0;
+    }
+    
+    to {
+        transform: translateX(0em);
+        opacity: 1;
     }
 }

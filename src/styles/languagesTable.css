@@ -1,0 +1,155 @@
+.competence-table {
+    left: 50%;
+    transform: translateX(-50%);
+    /* text-align: center; */
+    position: relative;
+    color: white;
+    /* display: flex; */
+    width: 50%;
+    font-size: 2vw;
+    margin-top: 5vw;
+    /* backdrop-filter: blur(20px); */
+    /* border-style: solid; */
+    /* border-radius: 50px; */
+    border-collapse: separate !important;
+    /* border: 5px solid black; */
+    /* border: 10px; */
+}
+
+.blurry-background {
+    animation-delay: 0.2s;
+    animation-name: blurry-background;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    --border-radius: 5vw;
+}
+
+.blurry-background-off {
+    animation-delay: 0s;
+    animation-name: blurry-background-off;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    --border-radius: 5vw;
+}
+
+/* .competence-table:hover {
+    animation-name: blurry-background;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+} */
+
+.gradient-border {
+    --borderWidth: 5px;
+    background: rgba(0, 0, 0, 1);
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+.gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+#programming-header {
+    text-align: right;
+    width: 50%;
+    padding-right: 2%;
+    font-size: 3.0vw;
+}
+
+#framework-header {
+    text-align: left;
+    width: 50%;
+    padding-left: 2%;
+    font-size: 3.0vw;
+}
+
+.programming-language {
+    text-align: right;
+    padding-right: 2%;
+    font-size: 3vw;
+    vertical-align: middle;
+}
+
+.fade-right {
+    opacity: 0;
+    animation-name: fade-right;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.fade-left {
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.framework-col {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.framework {
+    padding-left: 4%;
+    opacity: 0;
+    /* animation-name: fade-left;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    --x-travel: 5em;
+    animation-timing-function: ease; */
+}
+
+.logo {
+    width: 1em;
+    margin-right: 0.25em;
+    vertical-align:middle;
+    padding-bottom: 2%;
+}
+
+.sql-logo {
+    width: 2em;
+    margin-right: 0.25em;
+    vertical-align: middle;
+    padding-bottom: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+    .competence-table {
+        font-size: 4.5vw;
+    }
+
+    .framework {
+        padding-left: 4%;
+    }
+
+    .programming-language {
+        padding-right: 5%;
+        font-size: 5.0vw;
+    }
+
+    #programming-header {
+        text-align: right;
+        width: 50%;
+        padding-right: 2%;
+    }
+    
+    #framework-header {
+        text-align: left;
+        width: 50%;
+        padding-left: 2%;
+    }
+
+    .competence-table {
+        width: 80%;
+    }
+}
