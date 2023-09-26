@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Homepage from './pages/homepage';
 import ProjectsPage from './pages/projectsPage';
 import ErrorPage from './pages/errorpage';
+import ScrollToTop from './tools/scrollToTop';
 import {
   createBrowserRouter,
   RouterProvider,

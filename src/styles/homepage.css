@@ -81,8 +81,27 @@
     margin-top: 20vw;
 }
 
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .name {
+        font-size: 8vw;
+    }
 
-@media only screen and (max-width: 768px) {
+    .titles {
+        font-size: 4vw;
+        height: 50vh;
+    }
+
+    .description {
+        font-size: 3vw;
+        width: 80%;
+    }
+
+    .compentence-title {
+        font-size: 6.5vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .name {
         font-size: 10vw;
         height: 50vh;

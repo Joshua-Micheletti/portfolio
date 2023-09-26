@@ -141,15 +141,17 @@
         text-align: right;
         width: 50%;
         padding-right: 2%;
+        font-size: 6vw;
     }
     
     #framework-header {
         text-align: left;
         width: 50%;
         padding-left: 2%;
+        font-size: 6vw;
     }
 
     .competence-table {
-        width: 80%;
+        width: 90%;
     }
 }

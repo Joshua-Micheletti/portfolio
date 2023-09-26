@@ -2,12 +2,14 @@
 
 a {
     text-decoration: none;
+    color: white;
     animation-name: glow-down;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
 }
 
 a:hover {
+    color: white;
     animation-name: glow-up;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
@@ -59,6 +61,18 @@ a:hover {
     font-size: 1.1vw;
 }
 
+.right-button-icon {
+    align-content: left;
+    /* display: inline-block; */
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.1vw;
+    height: 2em;
+    min-height: 100%;
+    width: 100%;
+    margin-top: -2.5%;
+}
+
 .navbar-buttons-area {
     width: 20%;
     display: flex;
@@ -69,7 +83,35 @@ a:hover {
     align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
+.right-aligned {
+    width: 100%;
+    text-align: right;
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .navbar {
+        height: 8vw;
+    }
+
+    .home-button {
+        font-size: 3vw;
+    }
+
+    .navbar-buttons-area {
+        width: 35%;
+    }
+
+    .home-button-area {
+        width: 50%;
+    }
+
+    .right-button {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .navbar {
         height: 10vw;
     }
