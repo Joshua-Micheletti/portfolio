@@ -1,0 +1,54 @@
+@import "animations.css";
+
+.projects-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("https://miro.medium.com/v2/resize:fit:1200/0*m7555FzS-X2sHcqT.jpg");
+    /* background-color: black; */
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    font-family: Quicksand-Regular;
+    color: white;
+}
+
+
+.projects-table {
+    position: absolute;
+    top: 6vw;
+    width: 98%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: blurry-background;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    --border-radius: 2vw;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 3em;
+    width: 20%;
+    text-align: left;
+    margin-top: 2vw;
+    padding-left: 2vw;
+    font-size: 1.8vw;
+}
+
+td {
+    /* width: 100%; */
+    text-align: left;
+    padding-left: 2vw;
+    vertical-align: top;
+}
+
+.language {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content {
+    height: 100vh;
+}

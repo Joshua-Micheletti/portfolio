@@ -8,7 +8,6 @@ export default function ThreeBarIcon({state}) {
 
     useEffect(() => {
         setIsOpen(state);
-        console.log("yay");
     }, [state])
 
     return(
