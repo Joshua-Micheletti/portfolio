@@ -25,8 +25,6 @@ export default function Dropdown({ dark=false, items="", links, text="dropdown",
     function handleClickOutside() {
         setOpen(false);
         setTimeout(hideMenu, 500);
-        console.log(isOpen);
-        console.log(isHidden);
     }
 
     function hideMenu() {

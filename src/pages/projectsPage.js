@@ -5,6 +5,8 @@ import "../styles/projectsPage.css";
 import Project from "../components/project";
 
 export default function ProjectsPage() {
+
+
     return(
         <div className="projects-page">
             <Navbar />
@@ -40,13 +42,26 @@ export default function ProjectsPage() {
                     </th>
                     <tr>
                         <td>
-                            <Project title="Gallium" />
-                            <Project title="GUIApp" />
+                            <Project title="Gallium" hue={Math.random() * 360}/>
+                            <Project title="GUIApp" hue={Math.random() * 360}/>
                         </td>
                         <td>
-                            <Project title="Pyllium3D" />
-                            <Project title="Pyllium2D" />
-                            <Project title="Raytracing" />
+                            <Project title="Pyllium3D" hue={Math.random() * 360}/>
+                            <Project title="Pyllium2D" hue={Math.random() * 360}/>
+                            <Project title="Raytracing" hue={Math.random() * 360}/>
+                        </td>
+                        <td>
+                            <Project title="GallyRun" hue={Math.random() * 360}/>
+                        </td>
+                        <td>
+                            <Project title="portfolio" hue={Math.random() * 360} />
+                            <Project title="InvisionTech-clone" hue={Math.random() * 360} />
+                            <Project title="PlanetZooGenesCalculator" hue={Math.random() * 360} />
+                            <Project title="Tera_Damage_Optimizer" hue={Math.random() * 360} />
+                            <Project title="BezierCurveVisualizer" hue={Math.random() * 360} />
+                        </td>
+                        <td>
+                            <Project title="biblioteca" hue={Math.random() * 360} />
                         </td>
                     </tr>
                 </table>
