@@ -54,8 +54,8 @@
 
 @media only screen and (max-width: 768px) {
     .transparent-button {
-        width: 60vw;
-        height: 8vw;
+        width: 80vw;
+        height: 10vw;
         border-radius: 1vw;
         box-shadow: 0 0 5px black;
         animation: none;
@@ -66,7 +66,7 @@
     }
 
     .text-area {
-        font-size: 4vw;
+        font-size: 5vw;
         padding-top: 1vw;
     }
 }

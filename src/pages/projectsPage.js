@@ -18,13 +18,13 @@ export default function ProjectsPage({ seed }) {
 
     // Math.seedrandom("henlo");
 
-    const [width, setWidth] = useState(0);
+    const [width, setWidth] = useState(window.innerWidth);
+
     // const [hues, setHues] = useState([]);
 
     const updateWindowDimensions = () => {
         const newWidth = window.innerWidth;
         setWidth(newWidth);
-        console.log("updating width");
     };
 
     useEffect(() => {
@@ -32,8 +32,8 @@ export default function ProjectsPage({ seed }) {
         return () => window.removeEventListener("resize", updateWindowDimensions) 
     }, []);
 
-    const projectCount = 50;
-    const hues = [];
+    console.log(width);
+
     // var tmpHues = [];
 
     // for (var i = 0; i < projectCount; i++) {
