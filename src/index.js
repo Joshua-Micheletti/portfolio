@@ -27,7 +27,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/portfolio/projects",
-    element: <ProjectsPage />,
+    element: <ProjectsPage seed={(Math.random() * 1000).toString()}/>,
     errorElement: <ErrorPage />,
   }
 ]);

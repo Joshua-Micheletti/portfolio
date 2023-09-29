@@ -6,9 +6,14 @@ import { HSLToRGB } from "../tools/colors";
 
 export default function Project({title="project", description="description", tags="", link, image, hue=150}) {
     const [isOpen, setIsOpen] = useState(false);
+    const [isFirstDraw, setFirstDraw] = useState(true);
+
+    // var firstDraw = true;
     
     function handleClick() {
         setIsOpen(!isOpen);
+        // firstDraw = false;
+        setFirstDraw(false);
     }
 
     function redirect() {
@@ -24,8 +29,8 @@ export default function Project({title="project", description="description", tag
 
     return(
         <div className="project">
-            <div className={"project-content" + (isOpen ? " appear-down" : " appear-down-back")} >
-                <div className={"image-background" + (isOpen ? " appear" : " disappear")}
+            <div className={"project-content" + (isFirstDraw ? " appear-down-static" : (isOpen ? " appear-down" : " appear-down-back"))} >
+                <div className={"image-background" + (isFirstDraw ? " appear-static" : (isOpen ? " appear" : " disappear"))}
                      style={{"--r-d": darkColor[0],
                              "--g-d": darkColor[1],
                              "--b-d": darkColor[2],
@@ -35,7 +40,7 @@ export default function Project({title="project", description="description", tag
                              "--image": "url(" + image + ")"}}>
                 </div>
                 
-                <div className={"project-name" + (isOpen ? " blurry-background-p" : " blurry-background-off-p")} onClick={handleClick}>
+                <div className={"project-name" + (isFirstDraw ? " blurry-background-static" : (isOpen ? " blurry-background-p" : " blurry-background-off-p"))} onClick={handleClick}>
                     {title}
                 </div>
                 
@@ -45,11 +50,11 @@ export default function Project({title="project", description="description", tag
                     </div>
                 </div>
 
-                <div className={"tags" + (isOpen ? " appear" : " disappear")}>
+                <div className={"tags" + (isFirstDraw ? " appear-static" : (isOpen ? " appear" : " disappear"))}>
                     {tags}
                 </div>
 
-                <div className={"link" + (isOpen ? " appear" : " disappear")} onClick={redirect}>
+                <div className={"link" + (isFirstDraw ? " appear-static" : (isOpen ? " appear" : " disappear"))} onClick={redirect}>
                 </div>
             </div> 
                      

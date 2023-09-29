@@ -17,11 +17,30 @@
     font-size: 3vw;
 }
 
+.other-projects-title {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.other-projects-list {
+    display: inline-block;
+    width: 100%;
+    /* margin-bottom: 1vw; */
+}
+
+.project-container {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+}
+
 .projects-table {
     /* position: absolute; */
     /* top: 6vw; */
     margin-left: 50%;
     margin-bottom: 1vw;
+    padding-bottom: 1vw;
     width: 98%;
     left: 50%;
     transform: translate(-50%, 6vw);
@@ -29,6 +48,19 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     --border-radius: 2vw;
+}
+
+.other-projects {
+    width: 98%;
+    margin-left: 50%;
+    left: 50%;
+    transform: translate(-50%, 6vw);
+    animation-name: blurry-background;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    padding-bottom: 1vw;
+    --border-radius: 2vw;
+    margin-bottom: 1vw;
 }
 
 
@@ -69,39 +101,39 @@ table {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
-        .table-head {
-            border: none;
-            clip: rect(0 0 0 0);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-        }
+    .table-head {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
 
-        .table-row {
-            /* border-bottom: 3px solid #ddd; */
-            display: block;
-            margin-bottom: .625em;
-        }
+    .table-row {
+        /* border-bottom: 3px solid #ddd; */
+        display: block;
+        margin-bottom: .625em;
+    }
 
-        .table-cell {
-            /* border-bottom: 1px solid #ddd; */
-            display: block;
-            font-size: .8em;
-            text-align: right;
-        }
+    .table-cell {
+        /* border-bottom: 1px solid #ddd; */
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
 
-        .table-body {
-            display: flex;
-            margin-top: 1vw;
-            width: 100%;
-        }
+    .table-body {
+        display: flex;
+        margin-top: 1vw;
+        width: 100%;
+    }
 
-        .table-row {
-            width: 100%;
-        }
+    .table-row {
+        width: 100%;
+    }
 
     .projects-table {
         transform: translate(-50%, 8vw);
@@ -112,42 +144,55 @@ table {
     .projects-header {
         font-size: 4vw;
     }
+
+    .project-container {
+        display:block;
+        width: 100%;
+    }
+
+    .other-projects-title {
+        font-size: 4vw;
+    }
+
+    .other-projects {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-        .table-head {
-            border: none;
-            clip: rect(0 0 0 0);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-        }
+    .table-head {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
 
-        .table-row {
-            /* border-bottom: 3px solid #ddd; */
-            display: block;
-            margin-bottom: .625em;
-        }
+    .table-row {
+        /* border-bottom: 3px solid #ddd; */
+        display: block;
+        margin-bottom: .625em;
+    }
 
-        .table-cell {
-            /* border-bottom: 1px solid #ddd; */
-            display: block;
-            font-size: .8em;
-            text-align: right;
-        }
+    .table-cell {
+        /* border-bottom: 1px solid #ddd; */
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
 
-        .table-body {
-            display: flex;
-            margin-top: 1vw;
-            width: 100%;
-        }
+    .table-body {
+        display: flex;
+        margin-top: 1vw;
+        width: 100%;
+    }
 
-        .table-row {
-            width: 100%;
-        }
+    .table-row {
+        width: 100%;
+    }
     
 
     .projects-header {
@@ -157,6 +202,19 @@ table {
     .projects-table {
         transform: translate(-50%, 12vw);
         margin-bottom: 8vw;
+        width: 94%;
+    }
+
+    .project-container {
+        display:block;
+        width: 100%;
+    }
+
+    .other-projects-title {
+        font-size: 7vw;
+    }
+
+    .other-projects {
         width: 94%;
     }
 }
