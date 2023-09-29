@@ -9,6 +9,7 @@
     min-height: 110vh;
     font-family: Quicksand-Regular;
     color: white;
+    background-color: black;
 }
 
 .projects-header {
@@ -105,6 +106,7 @@ table {
     .projects-table {
         transform: translate(-50%, 8vw);
         margin-bottom: 4vw;
+        width: 90%;
     }
 
     .projects-header {
@@ -155,5 +157,6 @@ table {
     .projects-table {
         transform: translate(-50%, 12vw);
         margin-bottom: 8vw;
+        width: 94%;
     }
 }

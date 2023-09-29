@@ -70,7 +70,7 @@ export default function ProjectsPage() {
                                         description="3D raster engine, designed to be optimized for lower hardware"
                                         tags="OpenGL, GLFW, ImGui"
                                         link="https://github.com/Joshua-Micheletti/Pyllium3D"
-                                        image=""
+                                        image="https://raw.githubusercontent.com/Joshua-Micheletti/Pyllium3D/main/img/screenshot.png"
                                         hue={Math.random() * 360}/>
 
                                 <Project title="Pyllium2D"
@@ -86,6 +86,48 @@ export default function ProjectsPage() {
                                         link="https://github.com/Joshua-Micheletti/Raytracer"
                                         image="https://raw.githubusercontent.com/Joshua-Micheletti/RayTracer/main/img/reflection.png"
                                         hue={Math.random() * 360}/>
+
+                                <Project title="FitnessDiary"
+                                          description="A GUI app to keep track of fitness activities"
+                                          tags="TkInter"
+                                          link="https://github.com/Joshua-Micheletti/FitnessDiary"
+                                          image="https://raw.githubusercontent.com/Joshua-Micheletti/FitnessDiary/main/img/progress.png"
+                                          hue={Math.random() * 360} />
+                                
+                                <Project title="PythonGUIApp"
+                                         description="Graphical User Interface application template, crossplatform"
+                                         tags="TkInter"
+                                         link="https://github.com/Joshua-Micheletti/PythonGUIApp"
+                                         image="https://raw.githubusercontent.com/Joshua-Micheletti/PythonGUIApp/main/img/azure-dark.png"
+                                         hue={Math.random() * 360} />
+
+                                <Project title="Pyphics"
+                                         description="OpenGL application template, starting point of most python engines"
+                                         tags="OpenGL, GLFW"
+                                         link="https://github.com/Joshua-Micheletti/Pyphics"
+                                         image=""
+                                         hue={Math.random() * 360} />
+
+                                <Project title="PysicsWorld"
+                                         description="2D physics engine with box to box collision and resolution"
+                                         tags="Pyglet"
+                                         link="https://github.com/Joshua-Micheletti/PysicsWorld"
+                                         image=""
+                                         hue={Math.random() * 360} />
+
+                                <Project title="SkyboxUnwrapper"
+                                         description="A tool to unwrap spherical skyboxes into flat ones"
+                                         tags=""
+                                         link="https://github.com/Joshua-Micheletti/SkyboxUnwrapper"
+                                         image="https://raw.githubusercontent.com/Joshua-Micheletti/SkyboxUnwrapper/master/img/front.png"
+                                         hue={Math.random() * 360} />
+
+                                <Project title="KernelConvolution"
+                                         description="Single and Multithreaded application to apply kernel filters to images"
+                                         tags=""
+                                         link="https://github.com/Joshua-Micheletti/KernelConvolution"
+                                         image="https://raw.githubusercontent.com/Joshua-Micheletti/KernelConvolution/master/img/processed.png"
+                                         hue={Math.random() * 360} />
                             </td>
                             <td className="table-cell">
                                 <Project title="GallyRun"
