@@ -1,0 +1,72 @@
+@import "animations.css";
+
+.transparent-button {
+    /* margin-left: 50%; */
+    position: relative;
+    text-align: center;
+    width: 30vw;
+    margin-left: 50%;
+    margin-top: 6vw;
+    transform: translateX(-50%);
+    backdrop-filter: blur(20px);
+    height: 4vw;
+    color: white;
+    /* border-radius: 1vw; */
+    /* box-shadow: 0 0 5px black; */
+    cursor: pointer;
+    animation-name: blurry-background-off;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    --border-radius: 1vw;
+    --shadow-size: 5px;
+    margin-bottom: 2vw;
+}
+
+.transparent-button:hover {
+    animation-name: blurry-background;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    --border-radius: 1vw;
+    --shadow-size: 5px;
+
+}
+
+.text-area {
+    position: relative;
+    /* height: 100%; */
+    /* display: inline; */
+    /* vertical-align:bottom; */
+    padding-top: 0.5vw;
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .transparent-button {
+        border-radius: 1vw;
+        box-shadow: 0 0 5px black;
+        animation: none;
+    }
+
+    .transparent-button:hover {
+        animation: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .transparent-button {
+        width: 60vw;
+        height: 8vw;
+        border-radius: 1vw;
+        box-shadow: 0 0 5px black;
+        animation: none;
+    }
+
+    .transparent-button:hover {
+        animation: none;
+    }
+
+    .text-area {
+        font-size: 4vw;
+        padding-top: 1vw;
+    }
+}

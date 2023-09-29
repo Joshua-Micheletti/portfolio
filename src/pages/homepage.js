@@ -6,6 +6,7 @@ import { useIsVisible } from "../hooks/useIsVisible"
 
 import Navbar from "../layouts/navbar"
 import LanguagesTable from "../components/languagesTable"
+import TransparentLinkButton from "../components/transparentLinkButton";
 
 export default function Homepage(props) {
     const [seen, setSeen] = useState(false);
@@ -42,8 +43,8 @@ export default function Homepage(props) {
 
             <LanguagesTable />
 
-            <p> </p><br></br>
-            <p> </p><br></br>
+            <TransparentLinkButton />
+
             <p> </p><br></br>
             <p> </p><br></br>
         </div>
