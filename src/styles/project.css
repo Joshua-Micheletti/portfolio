@@ -75,7 +75,7 @@
     top: 0%;   
     align-items: start;
     --height: 10em;
-    --closed-height: 2em;
+    --closed-height: 1.9em;
     margin: 0.5em 0;
     overflow: hidden;
 }
@@ -194,7 +194,7 @@
 @media only screen and (max-width: 768px) {
     .project {
         --height: 26vw;
-        --closed-height: 7vw;
+        --closed-height: 6vw;
     }
 
     .project-name {
@@ -216,7 +216,7 @@
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
     .project {
         --height: 15vw;
-        --closed-height: 5vw;
+        --closed-height: 4.5vw;
     }
 
     .project-name {
